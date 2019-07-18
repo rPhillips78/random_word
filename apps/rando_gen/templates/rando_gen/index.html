@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Random Number Generator</title>
+    {% load static %}
+    <link rel="stylesheet" href="static rando_gen/css/style.css">
+</head>
+<body>
+    <div class="vh-100 d-flex align-items-center">
+        <div class="mx-auto text-center">
+          <h3>Random word(attempt #{{request.session.counter}})</h3>
+          <h4 class="border border-primary p-5">{{word}}</h4>
+          <a href="/generate" class="btn btn-primary">GENERATE</a>
+          <a href="/reset" class="btn btn-primary">RESET</a>
+        </div>
+      </div>
+</body>
+</html>
